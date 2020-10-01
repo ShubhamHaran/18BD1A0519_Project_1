@@ -1,0 +1,22 @@
+[1] Show hospital details
+    http://localhost:8004/hospitaldetails
+[2] Show ventilator details
+    http://localhost:8004/ventilatordetails
+[3] Get hospital by name
+    http://localhost:8004/hospitaldetails/gethosbyname
+    {"name":"KIIMS"}
+[4] Get ventilator by status
+    http://localhost:8004/ventilatordetails/getventbystatus
+    {"status":"occupied"}
+[5] Get ventilator by hospital name
+   http://localhost:8004/ventilatordetails/getventbyname
+    {"name":"Apollo"}
+[6] Update vent status
+    http://localhost:8004/updatevent
+     {"vid":"H1V2","status":"available"}
+[7] Add new vent
+      http://localhost:8004/addvent
+      {"vid":"H1V4","hid":"H1","status":"available","name":"Apollo"}
+[8] Delete vent
+     http://localhost:8004/deletevent
+     {"vid":"H1V4"}
